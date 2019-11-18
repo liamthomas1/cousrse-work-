@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 1
-  repeat: 0
+  repeat: 1
   onTimerComplete:
     m_PersistentCalls:
       m_Calls:
@@ -467,8 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e01829bd7678149b85791b767f50ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  scoreText: {fileID: 0}
+  healthBar: {fileID: 1978322201}
+  scoreText: {fileID: 1018998048}
   playerScore: 0
 --- !u!114 &657592664
 MonoBehaviour:
@@ -820,7 +820,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.03, y: -0.42}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1054065632}
         m_MethodName: SendHealthData
-        m_Mode: 3
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
