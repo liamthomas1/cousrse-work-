@@ -835,6 +835,7 @@ GameObject:
   - component: {fileID: 1054065626}
   - component: {fileID: 1054065625}
   - component: {fileID: 1054065624}
+  - component: {fileID: 1054065629}
   - component: {fileID: 1054065623}
   - component: {fileID: 1054065628}
   - component: {fileID: 1054065631}
@@ -977,6 +978,40 @@ MonoBehaviour:
   thecamera: {fileID: 519420031}
   smoothing: 5
   adjustmentAngle: 270
+--- !u!114 &1054065629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054065622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76fd6abb7a8d6b243a2e18d385939ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1054065632}
+        m_MethodName: SendHealthData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!95 &1054065631
 Animator:
   serializedVersion: 3
@@ -1039,7 +1074,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!1 &1108536448

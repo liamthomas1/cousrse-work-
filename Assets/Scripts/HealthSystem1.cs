@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
-public class OnDamagedEvent : UnityEvent<int> { }
-public class HealthSystem : MonoBehaviour
+public class OnDamagedplayerEvent : UnityEvent<int> { }
+public class HealthSystem1 : MonoBehaviour
 {
     public int health = 10;
     public UnityEvent onDie;
@@ -19,7 +20,9 @@ public class HealthSystem : MonoBehaviour
         {
             onDie.Invoke();
             Destroy(gameObject);
-			
-        }
+			SceneManager.LoadScene("Game Over");
+
+
+		}
     }
-} 
+}
