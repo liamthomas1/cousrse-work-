@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beee6e25f51a089459020a37d553dc1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 1
+  time: 25
   repeat: 1
   onTimerComplete:
     m_PersistentCalls:
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1054065627}
-  smoothing: 5
+  smoothing: 100
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -502,6 +502,7 @@ GameObject:
   - component: {fileID: 803790056}
   - component: {fileID: 803790055}
   - component: {fileID: 803790054}
+  - component: {fileID: 803790057}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -557,6 +558,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803790057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803790053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c2b1c6dac8ba745ae9c38f2f33268e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &933206134
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fbd2bba7507874b88a4046490d402f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8.5
 --- !u!58 &1054065624
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -976,7 +989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thecamera: {fileID: 519420031}
-  smoothing: 5
+  smoothing: 100
   adjustmentAngle: 270
 --- !u!114 &1054065629
 MonoBehaviour:
@@ -993,7 +1006,18 @@ MonoBehaviour:
   health: 5
   onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 803790057}
+        m_MethodName: EndGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onDamaged:
@@ -1058,7 +1082,18 @@ MonoBehaviour:
   health: 10
   onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 68c2b1c6dac8ba745ae9c38f2f33268e, type: 3}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onDamaged:
@@ -1546,6 +1581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144279999763259217, guid: 55d13316598409146b76a65cae690d33,
+        type: 3}
+      propertyPath: fireTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55d13316598409146b76a65cae690d33, type: 3}
