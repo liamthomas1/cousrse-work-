@@ -12,11 +12,11 @@ public class Enemy : MonoBehaviour
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-        GetComponent<MoveTowardsObject>().target = player.transform;
-        GetComponent<SmoothLookAtTarget2D>().target = player.transform;
-
-        //print(player);
-        //onSpawn.Invoke(player.transform);
+        //GetComponent<MoveTowardsObject>().target = player.transform;
+       // GetComponent<SmoothLookAtTarget2D>().target = player.transform;
+	   //what the hell this now work wait how the duck did this just ducking fix the ducking problem 07/12/2019 1:36am
+        print(player);
+        onSpawn.Invoke(player.transform);
     }
 }
 
