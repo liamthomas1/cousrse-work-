@@ -48,7 +48,7 @@ MonoBehaviour:
     type: 3}
   bulletSpawn:
   - {fileID: 91849330739855508}
-  fireTime: 0.6
+  fireTime: 0.3
 --- !u!1 &1009553638458256423
 GameObject:
   m_ObjectHideFlags: 0

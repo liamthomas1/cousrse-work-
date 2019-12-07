@@ -50,7 +50,7 @@ MonoBehaviour:
     type: 3}
   bulletSpawn:
   - {fileID: 91849330739855508}
-  fireTime: 0.6
+  fireTime: 0.3
 --- !u!114 &-3250637255512977600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,11 +63,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6ddb0996e3e7d4f8fe7442f341e6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1400056074692187664, guid: be6e9618c3b9d4e43aca6fa0e5fb4c37,
+  bulletPrefab: {fileID: 1400056074692187664, guid: 62cfb426f9d6b744ab61a84928e20c8f,
     type: 3}
   bulletSpawn:
   - {fileID: 5566807450490108621}
-  fireTime: 0.5
+  fireTime: 0.6
 --- !u!1 &1009553638458256423
 GameObject:
   m_ObjectHideFlags: 0
