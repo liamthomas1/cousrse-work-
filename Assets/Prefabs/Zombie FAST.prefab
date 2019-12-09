@@ -70,7 +70,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.25}
   m_EdgeRadius: 0
 --- !u!1 &8996155732535264942
 GameObject:
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33185c29650e9d1419985b75dff4cd54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 30
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9122a8cfae679418bcdbf311f572ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 10
+  score: 5
 --- !u!114 &8207835430948957507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  speed: 3
+  speed: 10
   orientation: 1
   enableRotation: 1
   rotationSpeed: 10
