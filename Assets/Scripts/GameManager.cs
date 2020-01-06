@@ -22,4 +22,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Zombie Shooter Level 1");
     }
+    public void quitgame()
+    {
+        Application.Quit();
+    }
+    
 }

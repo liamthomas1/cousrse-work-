@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  resetTime: 0.25
+  resetTime: 5
 --- !u!61 &3734970119015897973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  speed: 10
+  speed: 3
   orientation: 1
   enableRotation: 1
   rotationSpeed: 10
