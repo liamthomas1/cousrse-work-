@@ -481,9 +481,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GAME OVER!
-
-'
+  m_Text: "GAME OVER! \n"
 --- !u!222 &506087866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -778,7 +776,7 @@ RectTransform:
   m_GameObject: {fileID: 875826426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 55, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1408435573}
   m_RootOrder: 0
@@ -897,7 +895,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game over
+  m_Text: 'Game over
+
+
+'
 --- !u!222 &1408435575
 CanvasRenderer:
   m_ObjectHideFlags: 0
